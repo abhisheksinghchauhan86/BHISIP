@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather"
+    android:padding="16dp">
+
+    <!-- Search Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Today"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter City Name"
+        android:textStyle="italic"
+        android:backgroundTint="#9cfcf2"
+        android:layout_marginTop="100dp"
+        android:inputType="text"/>
+
+    <!-- Search Button -->
+
+    <!-- City Name -->
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityInput"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="145dp"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text=""
+        android:layout_below="@id/searchButton"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <!-- Temperature -->
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/cityName"
+        android:layout_marginTop="20dp"
+        android:text="Temperature : 0°C"
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/temp"
+        android:layout_marginTop="8dp"
+        android:text="Description : "
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+    <!-- Min Temperature -->
+    <TextView
+        android:id="@+id/tempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/description"
+        android:layout_marginTop="8dp"
+        android:text="Min Temperature : 0°C"
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+    <!-- Max Temperature -->
+    <TextView
+        android:id="@+id/tempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/tempMin"
+        android:layout_marginTop="8dp"
+        android:text="Max Temperature : 0°C"
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+    <!-- Feels Like -->
+    <TextView
+        android:id="@+id/feelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/tempMax"
+        android:layout_marginTop="8dp"
+        android:text="Real Feel : 0°C"
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+    <!-- Humidity -->
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/feelsLike"
+        android:layout_marginTop="8dp"
+        android:text="Humidity : 0%"
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+    <!-- Pressure -->
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/humidity"
+        android:layout_marginTop="8dp"
+        android:text="Pressure : 0 hPa"
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+    <!-- Wind Speed -->
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/pressure"
+        android:layout_marginTop="8dp"
+        android:text="Wind Speed : 0 m/s"
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+    <!-- Wind Direction -->
+    <TextView
+        android:id="@+id/windDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/windSpeed"
+        android:layout_marginTop="8dp"
+        android:text="Wind Direction : 0°"
+        android:layout_centerHorizontal="false"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
